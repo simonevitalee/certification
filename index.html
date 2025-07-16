@@ -7,10 +7,10 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f62702 0%, #A4262C 100%); 
+      background: linear-gradient(135deg, #f62702 0%, #A4262C 100%);
       background-attachment: fixed;
       margin: 0;
-      padding: 0; 
+      padding: 0;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -118,6 +118,17 @@
       color: #e74c3c;
     }
 
+    a.download-link {
+      margin-top: 20px;
+      color: #EC1C24;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a.download-link:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 500px) {
       .container {
         padding: 30px 20px;
@@ -150,6 +161,12 @@
       <div class="file-name" id="fileName">Nessun file selezionato</div>
       <button type="submit">Carica il File</button>
     </form>
+
+    <!-- 🔽 Link per scaricare il file di esempio -->
+    <a href="Esempio_Certificati.xlsx" download class="download-link">
+      📥 Scarica il file di esempio
+    </a>
+
     <div id="message" class="message"></div>
   </div>
 
